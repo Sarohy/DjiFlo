@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayoutPlayer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:paddingTop="10dp"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:src="@drawable/default_album_art"
+            android:id="@+id/iv_playlist_art"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:riv_corner_radius="15dp"
+            app:riv_border_width="3dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            app:riv_border_color="@color/white"
+            app:riv_mutate_background="true"
+            android:scaleType="fitXY"
+            />
+        <TextView
+            android:id="@+id/tv_playlist_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:text="@string/idle"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnPlay"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_width"
+                android:layout_margin="10dp"
+                android:background="@drawable/playbutton" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_playlist_songs"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:dividerHeight="10.0sp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

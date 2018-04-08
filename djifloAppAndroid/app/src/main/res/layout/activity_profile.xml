@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.fiv.music.djiflo.View.Activity.ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="250dp" />
+    <ImageView
+        android:id="@+id/imgViewNew"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="250dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_button"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnChoose"
+            android:text="Choose"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:text="Upload"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_user_name"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="Email"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_user_email"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="Phone"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_user_phone"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/tv_tab_save"
+        android:layout_width="wrap_content"
+        android:text="Save"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:background="@drawable/round_corner_tab"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
